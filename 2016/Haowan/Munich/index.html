@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            慕尼黑攻略 | 
+        
+        越锋利
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/images/favicon.jpg">
+    <link rel="icon" href="/images/avatar.gif">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="越锋利的个人博客">
+    <meta name="keywords" content="this is site keywords in theme">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="越锋利">
+    <meta name="msapplication-starturl" content="http://yuefeng.li/2016/Haowan/Munich/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="越锋利">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/images/avatar.gif">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yuefeng.li/2016/Haowan/Munich/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="慕尼黑攻略 | 越锋利">
+    <meta property="og:image" content="/images/avatar.gif">
+    <meta property="og:description" content="越锋利的个人博客">
+    
+
+    
+        <meta property="article:published_time" content="Mon Sep 12 2016 21:53:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Feb 25 2018 15:59:55 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yuefeng.li/2016/Haowan/Munich/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yuefeng.li/2016/Haowan/Munich/index.html",
+    "headline": "慕尼黑攻略",
+    "datePublished": "Mon Sep 12 2016 21:53:00 GMT+0800",
+    "dateModified": "Sun Feb 25 2018 15:59:55 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "越锋利",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/images/avatar.gif"
+        },
+        "description": "但行好事，莫问前程"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "越锋利",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/images/avatar.gif"
+        }
+    },
+    "keywords": "this is site keywords in theme",
+    "description": "越锋利的个人博客",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概述"><span class="post-toc-number">1.</span> <span class="post-toc-text">概述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#住宿"><span class="post-toc-number">2.</span> <span class="post-toc-text">住宿</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#景点"><span class="post-toc-number">3.</span> <span class="post-toc-text">景点</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#市中心：Marienplatz"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">市中心：Marienplatz</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Fuessen-小镇：新天鹅堡-高天鹅堡-皇宫博物馆"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Fuessen 小镇：新天鹅堡&#x2F;高天鹅堡&#x2F;皇宫博物馆</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#食物"><span class="post-toc-number">4.</span> <span class="post-toc-text">食物</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#交通"><span class="post-toc-number">5.</span> <span class="post-toc-text">交通</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#购物"><span class="post-toc-number">6.</span> <span class="post-toc-text">购物</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#瞎想"><span class="post-toc-number">7.</span> <span class="post-toc-text">瞎想</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                慕尼黑攻略
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/images/avatar.gif" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>越锋利</strong>
+        <span>9月 12, 2016</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=慕尼黑攻略&url=http://yuefeng.li/2016/Haowan/Munich/index.html&pic=http://yuefeng.li/images/favicon.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=慕尼黑攻略&url=http://yuefeng.li/2016/Haowan/Munich/index.html&via=越锋利" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yuefeng.li/2016/Haowan/Munich/index.html&text=慕尼黑攻略" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>本文只是攻略而已。照片什么的放了几张在我的 <a href="http://yuefengli.lofter.com/" target="_blank" rel="noopener">Lofter</a> 上，不过自我感觉也就草原那张还算拍的不错。</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>九月中旬来到慕尼黑，呆七天六个晚上，正好在慕尼黑啤酒节（Oktoberfest）的第二天离开。<br>关于别人写的攻略，可以参考蚂蜂窝和<a href="http://www.muenchen.de" target="_blank" rel="noopener">慕尼黑官网</a>。</p>
+<h2 id="住宿"><a href="#住宿" class="headerlink" title="住宿"></a>住宿</h2><p>我住在 U1 Rotkreuzeplatz 站的 Ghotel，每晚 120 eur（大概是因为临近啤酒节？）。房间柜子一打开是个厨房灶台，你敢信。当然这设计师一看就不知道中华料理的可怕。要是敢在柜子里做中华料理怕是整个房间都要乌烟瘴气。<br>我不知道这个区算是什么阶级啊，总之我感觉白人比火车站（Hauptbahnhof）那边的地方多，然后路上也干净和清净多了。路上的车有 90% 是德国车，其中又有一半是宝马。<br>交通非常方便，走出门就有地铁 U1，有 tram。并且位置非常完美，在内环（Innenraum）内，并且正好位于火车站和奥林匹克中心/BMW Welt 的中间，去 Schloss Nymphenberg 也可以走着去。</p>
+<h2 id="景点"><a href="#景点" class="headerlink" title="景点"></a>景点</h2><h3 id="市中心：Marienplatz"><a href="#市中心：Marienplatz" class="headerlink" title="市中心：Marienplatz"></a>市中心：Marienplatz</h3><p>最该去的肯定是 Marienplatz 了，就跟夫子庙城隍庙南山路河坊街一样。其周围有无数个景点。</p>
+<ul>
+<li>大的楼是新市政厅（neues Rathaus），旁边新一点的是旧市政厅（altes）。新市政厅门面上嵌了个钟，每天 11 点会有小人出来敲锣打鼓十分钟（Glockenspiel）。不过说实话钟声一点不好听，都是单音，旋律过于简单，还不如全家就是你家呢。人物的动作也仅仅是整体的平移旋转而已，手脚是不会动的。</li>
+<li>旧市政厅也有个钟，独立的钟楼，下面是个玩具博物馆（Spielzeug）。旁边有个朱丽叶雕像，右胸的画风和身体其他地方不一样。<a href="http://www.destination-munich.com/juliet-statue.html" target="_blank" rel="noopener">这里</a>解释说，人们相信摸她的胸部就能得到永不磨灭的爱（其实本来说的是 Verona 那个来着）。</li>
+<li>附近有个圣彼得教堂（Peterskirche），很大，可登顶。远些有个圣母教堂（Frauenkirche），洋葱顶，非常非常大，很宏伟，值得一去。在远些有个阿桑教堂，装饰特别特别豪华。其他的小教堂比如神圣精神教堂（Heilig-geist-kirche）基本就忽略不计吧。东南是谷物市场（viktualienmarkt），卖蔬菜啤酒之类的吃的和一些工艺品。<h3 id="Fuessen-小镇：新天鹅堡-高天鹅堡-皇宫博物馆"><a href="#Fuessen-小镇：新天鹅堡-高天鹅堡-皇宫博物馆" class="headerlink" title="Fuessen 小镇：新天鹅堡/高天鹅堡/皇宫博物馆"></a>Fuessen 小镇：新天鹅堡/高天鹅堡/皇宫博物馆</h3>位于德奥边境。从慕尼黑城站走，可买拜仁州票坐两小时 RE 到 Fuessen，末班是下午六点，之后好像还有 RB。三个景点几乎在一起，虽然新天鹅堡在高处，要多走一会儿。现场售票处有这三个中任意个数景点的联票，也有州宫廷联票，然而宫廷联票在这里只支持新天鹅堡。两个天鹅堡的参观时间都需要在购买时预约（中文只能预约 audio guide）。参观时间被精确控制，新天鹅堡 60min，高天鹅堡 35min，建议把皇宫穿插在两者之间。城堡里可乐 2eur 一瓶，山下车站 2.5eur，另山下有 Apollo 免税店，服务员都是中国人……</li>
+<li>Fuessen 绝对是必去的景点，不说天鹅堡，就是路上的风景，也绝对值得这两个小时和来回票价。真的，也许是我没有去过呼伦贝尔，见识短浅，总之我觉得拜仁乡下的牧场真是美得惊艳，参考这条 lofter。</li>
+<li>天鹅堡为什么要叫天鹅堡呢？综合今天听到的解说和看到的壁画来看，我以为这个天鹅指的应当是天鹅骑士罗恩格林的天鹅，也就是说，其直接的出处来自瓦格纳的同名歌剧『<a href="https://zh.wikipedia.org/wiki/%E7%BD%97%E6%81%A9%E6%A0%BC%E6%9E%97" target="_blank" rel="noopener">Lohengrin</a>』（这部歌剧中最著名的乐曲可能就是所谓的『<a href="https://zh.wikipedia.org/wiki/%E5%A9%9A%E7%A4%BC%E5%90%88%E5%94%B1" target="_blank" rel="noopener">婚礼合唱（Bridal Chorus）</a>』，也就是通常所谓的几首『<a href="https://zh.wikipedia.org/wiki/%E7%B5%90%E5%A9%9A%E9%80%B2%E8%A1%8C%E6%9B%B2" target="_blank" rel="noopener">婚礼进行曲</a>』的其中之一。维基百科对于在婚礼中使用这首曲子做了两点犀利的吐槽。）我以为，路德维希二世（<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E5%BE%B7%E7%BB%B4%E5%B8%8C%E4%BA%8C%E4%B8%96_(%E5%B7%B4%E4%BC%90%E5%88%A9%E4%BA%9A)" target="_blank" rel="noopener">童话国王</a>）看了这个歌剧之后对罗恩格林十分倾心，所以就把这两城堡命名为天鹅（Schwangau）堡。然而这其实是不对的，根据<a href="http://www.bbkz.com/forum/showthread.php?p=6143975" target="_blank" rel="noopener">这里</a>的说法，和<a href="https://en.wikipedia.org/wiki/Schwangau" target="_blank" rel="noopener">维基百科</a>的只言片语，Schwangau 这个名字是传承于『_castrum Swangowe_』，而后者 1090 年就有了。所以这个追本溯源就显得很麻烦了，我的思路是，作为瓦格纳灵感的那个中世纪诗篇取材于传说，而传说的源头，就是这个名字的源头，估计就是那个 Welf 家族的事情吧。暂时不管了。总之，这两个城堡很早就有了，而且叫这个名字，并不是巴伐利亚州国王们搞出来的。</li>
+<li>高天鹅堡（Schloss Hohenschwangau）很小，基本上只有三层楼，一层皇后，一层皇帝。由于建造时间比较早，所以几乎没有什么现代化设施（虽然有电梯和电灯），房间装饰也比较随意（和新天鹅堡比较的话）。主要的看点就是壁画和拜仁各个家族赠送的奇奇怪怪的礼品。这些礼品真的是非常非常的精致。</li>
+<li>新天鹅堡（Schloss Neuschanstein）：迪士尼乐园 logo 的蓝本。</li>
+<li>阿尔卑斯湖（Alpsee）：湖水特别蓝，而且清澈。看到有人游泳，我也想去。</li>
+<li>天鹅湖（Schwansee）：回来看了游记才知道原来所谓的天鹅湖也就在旁边，没去有点遗憾了。<h2 id="食物"><a href="#食物" class="headerlink" title="食物"></a>食物</h2>据说慕尼黑最流行的小吃是 Doener kebap（土耳其烤肉汉堡？）……由上世纪 70 年代的土耳其移民代入。与其类似的还有 Dueruer，好像是这么拼的，和前者的区别在于这是拿卷饼卷的，里面的东西是一样的。都是四欧左右一个。<br>麦当劳巨无霸套餐 6.7 欧。<br>宫廷啤酒屋（Haufbraeuhaus）进去看了下，然而只是简单的吃了一餐，尝试了 original 和黑啤，不过似乎并没有什么区别。肘子都没吃到。里面的 waitress 穿的都是传统服饰 Dirndl，很有风味。<br>正好赶上慕尼黑啤酒节！请牢记这<a href="http://pic.qyer.com/album/user/860/80/SU9VShoHZQ/index/680x" target="_blank" rel="noopener">六大啤酒品牌</a>，虽然不预订的话都进不了帐篷。<br>猪肘子，各式香肠（wurst），椒盐卷饼（Pretzel），。<br>最享受的反而是在 BMW Welt 的午餐。<h2 id="交通"><a href="#交通" class="headerlink" title="交通"></a>交通</h2>慕尼黑的市内交通主要分为城郊铁路 S（Schnellbahn），地铁 U（Ubahn），电车（tram/strassebahn）和巴士（bus），运营商是 MVV。在某些地方 S 和 U 的轨道是通用的。买票的时候注意区域，因为票不是按照哪一站哪一站来的，而是按照区域划分的。所以万分切记旅馆要定在 Innenraum 里，不然就亏大了。城际的交通有 RB/RE/ICE 等等，不是很了解，运营商是 DB。基本上来说，买票请在网上搜对应的运营商网站或者 app 来获取信息选择票种，然后去自动售票机买（支持 VISA，虽然没写）。如果直接去自动售票机买，第一次肯定是蒙逼的。当然如果是土豪，像上海地铁一样坐一次买一次票，应当不会蒙逼。<br>德国地铁没有安检，也没有闸机，但是有打卡机。基本上，除了在进站之后买的（比如在飞机场买的地铁票）票，所有的票在使用之前都要在进站的时候打一下，否则查到票会作逃票（swartzfahren）处理，罚款 60 欧。虽然我坐地铁基本没遇到过查票，RB 倒是每次都查了。<br>慕尼黑地铁站台上是不写前站后站名字的，在站台上纵向的铁牌上左右箭头指示的是出口对应的街道名字。横向的电子站牌上会显示线路号和对应的终点站的名字。所以选择乘坐方向的时候就要看地铁找线路终点站或者根据谷歌地图提示的站台号（Gl., Gleis）来选。这种指示方式的好处是，你只要记住每条线路的起点和终点，就可以确定你坐的方向，而不需要去记下一站的站名。坏处就是，在不熟悉的情况下，得花半天去在地图上找电子站牌上显示的谜之站名。但是我仔细一想这种所谓的好处坏处就是扯淡，按照上海地铁的标示方法完全可以解决一切问题，没有任何缺点，除了在共用线路的时候要多贴几条以外。所以德国人这个设计模式是不对的。<br>不管是火车还是地铁，进出开门都要自己用手按。车站电梯可以双向运行倒是不错，不过每次看到下面有个大胡子和我方向冲突我总是拔腿就跑。<br>去飞机场的时候，建议坐 S1，因为 20min 一班，比较快。S1 到了某站会分叉，前半车厢是往 Freising 去的，记得换乘到后半车厢。<h2 id="购物"><a href="#购物" class="headerlink" title="购物"></a>购物</h2><ul>
+<li>百货商店请认准 Galeria（还有 Karstadt 等），药妆（包括护手霜/泡腾片等）请去 SANI PLUS 或者 DM。 DM 是很好很大，然而没有德国世家（Dr Hauschka），并且这家退税不走退税公司，得把盖了章的退税单寄回 DM 在卡尔斯鲁厄的总部才能拿到退税（其实只要拿到购买城市的 DM 柜台就可以，可是要在机场海关盖章，偏偏慕尼黑机场又没有 DM），实在搞不定。当然不得不说 DM 的退税是有 19% 还是很良心的（据说。其实我也没试过）。</li>
+<li>超市的话还是 Lidl 和 Aldl 吧，支持 VISA。一些号称所谓最便宜级别的小超市（比如 Penny）不支持 VISA/MasterCard。另外我想吐槽很多超市，比如说 Penny ，竟然卖意呆利香肠（Salami），却不卖德国香肠。</li>
+<li>以上所说的都可以在 Olympia-einkaufenzentrum 找到，U1 的北终点站。当然其实 Marienplatz 也都有。另外在奥林匹亚购物中心的两三站（U3）之外的奥运公园（Olympiapark），每逢周五周六有个跳蚤市场（flohmarkt），据说是慕尼黑最大。记得要早上去，下午人就跑了。</li>
+<li>标有国家储蓄银行（staadt sparkasse）的 ATM 支持银联取现。中国银行的借记卡，手续费貌似是 15RMB，不知道有没有上限，汇率就是银行的现钞卖出价。还行吧，可以说不亏，虽然和招行信用卡比好像有点坑。奇葩的是，中国银行慕尼黑分行柜台不能用中国的中国银行借记卡取现。</li>
+<li>慕尼黑机场每个航站楼只有一个海关，在公共区域，T2 倒是有两个 Global Blue，一内一外。</li>
+</ul>
+</li>
+</ul>
+<h2 id="瞎想"><a href="#瞎想" class="headerlink" title="瞎想"></a>瞎想</h2><p>德国人的脑回路，毕竟和我们不太一样。一些简短的吐槽可以参考<a href="http://www.weibo.com/1874810815/E8aB7AEsb?from=page_1005051874810815_profile&wvr=6&mod=weibotime" target="_blank" rel="noopener">这条微博</a>。</p>
+<ul>
+<li>他们特别注意要节约资源这个事情。比如说，机场厕所里，没有提供坐便器的垫纸，取而代之提供的是像洗手液一样的东西，说是让人涂在手纸上把垫圈擦一遍。更绝的是在洗手的地方，他不放烘干机，放一个毛巾机，你把手放过去他就送点纸出来，你擦完手之后它再把纸从另一个口吸进去。哪有这样节约用纸的？？？？在 Sofitel 酒店的情况是，洗手台上放着一堆堆毛巾，旁边放着一个框用完了扔进去。另外就是，宾馆不提供所有的一次性产品，比如拖鞋和牙刷牙膏。但是话又说回来，你们这么节约资源，为什么店铺在打烊之后都不熄灯呢？</li>
+<li>德国人比较喜欢旅行车，大约是他们比较喜欢旅行，并且估计他们旅行的时候总要拖个副车厢在车后面，特别多，即使 polo 这样的小车也会后面伸出来一个杆。我说你那破小车能拉得动么。然而又看不到 SUV。然后，他们明明开的是旅行车，却总是要去装夸张的轮圈和空力套件：奥迪有一半都是带 RS 标的，连雷诺都挂着 GTi（我怎么从来没听说过）……</li>
+<li>德国人还爱老车，我看到了很老很老的 Carrera，看到了 Old Beatles/Old Mini/Fiat 500，看到了长得和红旗阅兵车似的福特老爷车，以及各种奇奇怪怪的车……</li>
+<li>除了汽车，德国人特别喜欢骑自行车。大的人行道上铺柏油的地方专门给自行车骑，一个个大爷大妈骑地飞快，还不带护具。年轻人则有很多顶着婴儿车的。</li>
+<li>LB 曾经说过，德国这边随处可见精妙的机械结构。我刚才才发现，原来窗户把手有三个状态，出了一个常规的锁定状态以外，还有两个分别让窗户沿下底面或者右边线为轴旋转的状态。惊了。</li>
+</ul>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yuefeng.li/2016/Haowan/Munich/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuefeng.li/2016/Haowan/Munich/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2016/Haowan/ftp-server-setup/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/Random%20Thoughts/2016-06-18/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/images/avatar.gif" alt="越锋利's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        但行好事，莫问前程
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="/about" target="_blank" title="About Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person</i>
+                        
+                        About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/12/">十二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/11/">十一月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/04/">四月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/02/">二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/01/">一月 2015<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/12/">十二月 2014<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/10/">十月 2014<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2009/07/">七月 2009<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">21</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/YuefengLi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/yuefengli" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;越锋利
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            科学上网实用指南 | 
+        
+        越锋利
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/images/favicon.jpg">
+    <link rel="icon" href="/images/avatar.gif">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="越锋利的个人博客">
+    <meta name="keywords" content="this is site keywords in theme">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="越锋利">
+    <meta name="msapplication-starturl" content="http://yuefeng.li/2015/Web/fuck_GFW/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="越锋利">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/images/avatar.gif">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yuefeng.li/2015/Web/fuck_GFW/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="科学上网实用指南 | 越锋利">
+    <meta property="og:image" content="/images/avatar.gif">
+    <meta property="og:description" content="越锋利的个人博客">
+    
+
+    
+        <meta property="article:published_time" content="Sat Apr 25 2015 18:43:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Feb 25 2018 15:59:52 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yuefeng.li/2015/Web/fuck_GFW/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yuefeng.li/2015/Web/fuck_GFW/index.html",
+    "headline": "科学上网实用指南",
+    "datePublished": "Sat Apr 25 2015 18:43:00 GMT+0800",
+    "dateModified": "Sun Feb 25 2018 15:59:52 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "越锋利",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/images/avatar.gif"
+        },
+        "description": "但行好事，莫问前程"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "越锋利",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/images/avatar.gif"
+        }
+    },
+    "keywords": "this is site keywords in theme",
+    "description": "越锋利的个人博客",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-如何选择翻墙方式"><span class="post-toc-number">1.</span> <span class="post-toc-text">1. 如何选择翻墙方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-各类翻墙方式简介"><span class="post-toc-number">2.</span> <span class="post-toc-text">2. 各类翻墙方式简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-Shadowsocks-服务器"><span class="post-toc-number">3.</span> <span class="post-toc-text">3. Shadowsocks 服务器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-Shadowsocks-客户端"><span class="post-toc-number">4.</span> <span class="post-toc-text">4. Shadowsocks 客户端</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-没处写的一些话"><span class="post-toc-number">5.</span> <span class="post-toc-text">5. 没处写的一些话</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                科学上网实用指南
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/images/avatar.gif" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>越锋利</strong>
+        <span>4月 25, 2015</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=科学上网实用指南&url=http://yuefeng.li/2015/Web/fuck_GFW/index.html&pic=http://yuefeng.li/images/favicon.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=科学上网实用指南&url=http://yuefeng.li/2015/Web/fuck_GFW/index.html&via=越锋利" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yuefeng.li/2015/Web/fuck_GFW/index.html&text=科学上网实用指南" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>此文的目的在提供当前状况下最有效的翻墙基础知识和可用方法，简而言之就是科学上网的一个 Quick start guide。<br>本文第一节针对不同的情况给出了不同的翻墙解决方案，第二节简述了各种翻墙方式的含义和优缺点。第三节和第四节重点介绍了 Shadowsocks 的设置方法。第五节为然而并没有什么鸟用的抒情。</p>
+<h2 id="1-如何选择翻墙方式"><a href="#1-如何选择翻墙方式" class="headerlink" title="1. 如何选择翻墙方式"></a>1. 如何选择翻墙方式</h2><p>我感觉我已经写得超级全了，使用难度从上到下递增。</p>
+<ul>
+<li>如果只是为了使用谷歌的网页（包括网页搜索、图片搜索，学术搜索，谷歌翻译等等），那么推荐使用好事者搭建的谷歌国内镜像，<a href="http://blog.sciencenet.cn/blog-752541-817729.html" target="_blank" rel="noopener">这边</a>是我刚用谷歌搜索『谷歌 墙内镜像』出来的第一个网页，其中列出了一堆镜像站点。<del>我感觉其中的『<a href="http://www.gfsoso.net/" target="_blank" rel="noopener">谷粉搜搜</a>』（Dec, 2015 Update: 已经变成了奇怪的网站）还不错。</del></li>
+<li>如果只是为了使用 Gmail，那么最好的办法是使用国内邮箱代收代发 Gmail 的邮件。请自行搜索『163邮箱 代收Gmail』寻找不同邮箱的具体设置方式。可以选择的协议有两种： POP3 和 IMAP，推荐后者。另外国内邮件也可以代发 Gmail 的邮件的，寄送地址依然会显示是 Gmail 地址，不过收件人看到的邮件详细信息里可能会写『<a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a> via qq.com』这样的邮送域提示。具体会不会，试一下就知道了。</li>
+<li>如果想要完整的 PC 端网页翻墙体验，但是没有其他软件或者手机端翻墙的需要，推荐采用 xx-Net，一个基于 GoAgent 的但是更加友好的工具。下载和教程参见 <a href="https://github.com/XX-net/XX-Net" target="_blank" rel="noopener">GitHub 主页</a>。</li>
+<li>如果只是为了玩舰娘（或者刀剑乱舞）。嫌麻烦的直接买岛风 go 去，不嫌麻烦的话，如果不想花钱，可以搜索『DMM 反向代理』改 hosts，不过那样的速度可能会很慢，看人品，甚至还有可能经常被猫。</li>
+<li>如果想要让某个程序（Dropbox etc.）翻墙，或者想要获得全平台（PC/iOS/Android etc.）的翻墙体验，那么就推荐使用 VPN 或者 shadowsocks。对于未越狱的 iOS 用户，前者是唯一的选择（maybe?）。对于 Windows 和 Android 用户推荐后者，原因是比较便宜 XDD。</li>
+<li>如果自己觉得是一个 Geek，或者是一个合格的谷歌脑残粉（比如我），那么请使用 GoAgent。优点是永久免费，而且理论上可以获得最快的访问谷歌服务（也包括 YouTube）的速度。缺点是只支持 PC 端浏览器，Dropbox 和手机都不行。哦对了，教育网用户还可以考虑使用 IPv6。</li>
+</ul>
+<h2 id="2-各类翻墙方式简介"><a href="#2-各类翻墙方式简介" class="headerlink" title="2. 各类翻墙方式简介"></a>2. 各类翻墙方式简介</h2><p>墙，也叫防火长城，GFW(Great FireWall)。是以方滨兴为首的北京邮电大学的一群人，和某自由民主国家的某网络设备厂商（Cisco）搞出来的，一个限制你国人民访问某些国内和海外网站的，国家级别的，网络防火墙。<br>科学上网，就是翻墙，也称为『 fq 』。翻墙软件，称为梯子。所有的梯子，除了『改 hosts 大法』以外，结构上都是类似的。简单来说就是，你的电脑通过某种加密的方式（VPN/HTTP/Socks），在不被 GFW 发现的情况下，和翻墙服务器通信，而翻墙服务器呢，可能本身在墙外，或者使用了什么黑科技，所以就可以代理你的请求来访问墙外网站。具体来说，梯子的种类有以下几种：</p>
+<ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks" target="_blank" rel="noopener">Shadowsocks</a>，中文名影梭，简称 SS。是 @clowwindy 编写的基于 Socks v5 的代理。支持 Windows/Android/iOS/OS X/OpenWRT 全平台（iOS 需要越狱，但 Android 可以不 root），使用方便，稳定可靠。如果选择了合适的服务器，速度很快。</li>
+<li>VPN，即虚拟专用网。其主要特点是，名气比较大。<del>就免费的 VPN 来说，目前，勉强能够使用的只有 <a href="http://www.vpngate.net/cn/" target="_blank" rel="noopener">VPNGate</a>，使用 SoftEther 的 VPN 协议。只支持 Windows 平台。速度很慢，并且也不是每次都能成功，并不推荐。【注意】请不要点击百度里搜出来第一个的那个『vpngate.com.cn』，那个是国内的山寨货。</del> 免费的 VPN 我没有见过有好用的。收费的 VPN 的话我没用过，名气比较大的，国外有 Astril，国内有 GreenVPN 等等。需要注意的是 VPN 一定为全局代理，也就是说，开了之后，不管浏览器还是 QQ 都会走代理。</li>
+<li><a href="https://github.com/goagent/goagent" target="_blank" rel="noopener">Goagent</a>。这是 @phuslu 编写的一个 HTTP 代理。这个代理需要自己搭建服务器（通常是搭建在免费的 <a href="https://appengine.google.com/" target="_blank" rel="noopener">GAE</a> 上） 。Windows 端支持良好，安卓端可用 fqrouter 代理，但是效果不好。另外 PC 端的某些软件，比如 Dropbox 无法使用这个代理。推荐给所有真正的对谷歌爱得深沉的谷粉使用（比如我 XDDD）。<del>具体方法请参照 GitHub 主页上的说明。</del> 作者在 2015 年被警方请去喝茶，Github 主页已经删除，推荐使用 <a href="https://github.com/XX-net/XX-Net" target="_blank" rel="noopener">xx-Net</a> 作为替代。</li>
+<li>自由门和无界浏览器等等。自由门是有法轮功背景的，个人非常不推荐与宗教或者不明势力有联系的软件。此类代理速度较慢，原理未知，安全性大大的存疑。</li>
+<li>Hosts 文件。<del>正常时候，当你在浏览器的地址栏输入一个网址的时候，浏览器首先要做的工作是把这个域名解析成 IP 地址，然后再和那个 IP 地址通信。这个过程叫做 DNS 查询。有专门的 DNS 服务器来做这个事情，但是 Hosts 文件里写的域名解析地址优先级是高于 DNS 查询结果的，也就是说，如果你在 hosts 文件里写上『baidu.com 127.0.0.1』，那么访问 baidu.com 就会强制指向 127.0.0.1。在实战中，如果一个被墙的网站有 n 个 IP 地址可用，而 GFW 只屏蔽了其中的一部分，那么就可以把没屏蔽的 IP 地址写进 hosts 里就可以顺利访问了。对于 Google 这种号称全球有 2000000+ 个 IP 地址（还只是 IPv4 的，IPv6 的估计更多）的网站，这种方法是非常有效的。不过一旦一个 IP 地址被公开，基本上很快就会被封，所以现在基本已经没有还在维护的公开的 hosts 列表了，曾经 Google plus 上有一个叫 <a href="https://plus.google.com/u/0/communities/111265655058678013030" target="_blank" rel="noopener">imouto hosts</a> 的 project，现在已经不更新了。</del></li>
+<li>在线代理。就是在线代理，网上一搜一大把，然而我感觉并没有什么鸟用。</li>
+<li>SSH 代理。现在很少见了，按下不表（反正我也不懂）。</li>
+</ul>
+<p>下面着重介绍一下 Shadowsocks。</p>
+<h2 id="3-Shadowsocks-服务器"><a href="#3-Shadowsocks-服务器" class="headerlink" title="3. Shadowsocks 服务器"></a>3. Shadowsocks 服务器</h2><p>Shadowsocks 的代理在结构上，大概是这样的：本地程序（浏览器或 QQ 等）和本地的 SS 客户端（127.0.0.1: 1080）进行交流，然后 SS 客户端对信息进行一番加工后，以加密的方式，绕过 GFW，和墙外的代理服务器（Remote Server: xxx）进行交流，远端的代理服务器和你想访问的目标网站进行交流。<br>为了完成这个回路，需要本地（客户端）和服务器端的配置。先说服务器端。</p>
+<ul>
+<li>对于大部分正常人，推荐在<a href="https://fyzhuji.com/shadow.html" target="_blank" rel="noopener">枫叶主机</a>上购买半年/一年的 ss 账号，我现在用的也是这家。半年 30软妹币，一年 50 ，价格是相当良心了。其他地方基本上是一年 100 软妹币左右的。普通套餐的话，支持两个设备（虽然我实际上有四个设备），可以自选美国和亚洲的服务器节点（包括日本，舰娘玩家的福音）。速度非常好，特别日本节点。有意购买的请点击我的<a href="https://www.fyzhuji.com/aff.php?aff=869" target="_blank" rel="noopener">邀请链接</a>，有回扣噢。如果对于效果没有信任，可以向客服联系讨要试用账号。</li>
+<li>对于 geek 来说，可以考虑购买 Linode/Digital Ocean/Bandwagon 的 VPS，然后在上面自己搭建 ss 服务器给自己用。费用大概是每月 10 刀（DO），或者每年 5 刀（Bandwagon）。可以看到两者的价格相差很大，当然一分钱一分货你懂的。</li>
+<li>对于想省钱的，或者觉得自己的时间不那么值钱的，或者对自己的搜索能力特别有信心的，或者有这方面的人脉资源的人，可以考虑寻找免费的 SS 账号。Google Plus 上会有一些。之前<a href="http://1024.canglaoshi.mobi" target="_blank" rel="noopener">苍老师</a> 上有稳定的免费账号提供，不过自从某天站长发现自己一天要花几百刀流量费之后这个网站就停了。</li>
+</ul>
+<h2 id="4-Shadowsocks-客户端"><a href="#4-Shadowsocks-客户端" class="headerlink" title="4. Shadowsocks 客户端"></a>4. Shadowsocks 客户端</h2><p><del>客户端请点击 SS <a href="https://github.com/shadowsocks/shadowsocks#client" target="_blank" rel="noopener">主页</a>下载，按照平台选择。</del> Shadowsocks 的主页主分支挂了，Windows 下可以直接点击<a href="https://github.com/shadowsocks/shadowsocks-windows/tree/master" target="_blank" rel="noopener">这里</a>。<del>Windows 8 或者支持 .NET framework 4.0 的用户请选择『Shadowsocks-win-dotnet4.0-x.x.x.zip.』，否则请选择『Shadowsocks-win-x.x.x.zip』.</del><br>下载之后双击打开，填入信息如下：</p>
+<ul>
+<li>服务器 IP：填入代理服务器 IP 或者域名。从枫叶上买的可以在<a href="https://fyzhuji.com/clientarea.php?action=products" target="_blank" rel="noopener">这里</a>查看。</li>
+<li>服务器端口：同上，自行查看。</li>
+<li>密码：自行查看。</li>
+<li>加密方式：自行查看。</li>
+<li>备注：随意</li>
+<li>代理端口：1080，默认即可。</li>
+</ul>
+<p>对于 Windows 平台，之后点击确定，右击任务栏图标，选择『启用系统代理』，代理模式选择『PAC 模式』即可。<br>这时候浏览器和其他支持自动检测代理的程序应该已经可以翻墙了，不信可以点击 <a href="http://www.youtube.com" target="_blank" rel="noopener">Facebook</a> 试试。如果不行的话，请打开程序的代理设置，手动填写代理如下：</p>
+<ul>
+<li>服务器：127.0.0.1</li>
+<li>端口：1080</li>
+<li>协议：Socks v5</li>
+</ul>
+<p>另外新版的 SS 客户端是支持 HTTP 代理的，默认端口是 8123，对于舰娘浏览器 KCV（kancolle viewer）等不支持 Socks v5 的程序来说这还是很有用的。<br>如果想要精确的控制访问哪些网站要经过代理，请安装 Chrome 插件 『SwitchyOmega』。或者自行修改 PAC 文件。</p>
+<p>安卓平台，可以在 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener">Google Play</a> 上下载客户端，或者<a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank" rel="noopener">这里</a>直接下载。设置是类似的。如果 root 了的话，软件会自动修改 iptables 进行代理，如果没有 root，则会以 VPN 代理的形式启动，app 会向你所有 VPN 权限，点同意就行。无论 root 与否，效果都是不错的。<br>对于苹果平台……然而作为一个真正的谷歌粉，我从来不购买苹果的任何设备。</p>
+<h2 id="5-没处写的一些话"><a href="#5-没处写的一些话" class="headerlink" title="5. 没处写的一些话"></a>5. 没处写的一些话</h2><p>要说 GFW 为什么叫 GFW 其实我也并不知道。不过早年登 QQ 邮箱的时候，可能有人注意到，登陆界面的左边有时候会出现一个小电脑，上面一行绿字：<br><em>Across the Great Wall we can reach every corner in the world.</em></p>
+<p><img src="http://cupic.img168.net/bbsfile/forum/month_1011/1011132340b5416a79e2e6ffe5.png" alt="the Great Wall then"></p>
+<p>这个句子，就是中国发向世界的第一封电子邮件的第一行。这短短的一句话，凝聚了许多第一次，也凝聚了国人对开阔的世界和开阔的互联网的渴望。那个时候，是 1987 年。<br>谁曾想到，20 多年之后，这个『the Great Wall』竟然以另一种意义出现，生生横亘在我大局域网和那开阔的互联网之间。<br>当年写这封邮件的人，估计做梦也不会想到，这句话会以这样一种方式成为一句绝妙的讽刺。<br>哈哈哈，还真是幽默</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yuefeng.li/2015/Web/fuck_GFW/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuefeng.li/2015/Web/fuck_GFW/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2015/Haowan/remote-desktop/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2015/Haowan/lets-talk-about-west-lake/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/images/avatar.gif" alt="越锋利's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        但行好事，莫问前程
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="/about" target="_blank" title="About Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person</i>
+                        
+                        About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/12/">十二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/11/">十一月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/04/">四月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/02/">二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/01/">一月 2015<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/12/">十二月 2014<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/10/">十月 2014<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2009/07/">七月 2009<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">21</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/YuefengLi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/yuefengli" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;越锋利
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

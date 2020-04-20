@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            西湖景点漫谈 | 
+        
+        越锋利
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/images/favicon.jpg">
+    <link rel="icon" href="/images/avatar.gif">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="越锋利的个人博客">
+    <meta name="keywords" content="this is site keywords in theme">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="越锋利">
+    <meta name="msapplication-starturl" content="http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="越锋利">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/images/avatar.gif">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="西湖景点漫谈 | 越锋利">
+    <meta property="og:image" content="/images/avatar.gif">
+    <meta property="og:description" content="越锋利的个人博客">
+    
+
+    
+        <meta property="article:published_time" content="Wed Feb 11 2015 16:33:00 GMT+0800">
+        <meta property="article:modified_time" content="Thu Mar 05 2015 19:57:55 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/index.html",
+    "headline": "西湖景点漫谈",
+    "datePublished": "Wed Feb 11 2015 16:33:00 GMT+0800",
+    "dateModified": "Thu Mar 05 2015 19:57:55 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "越锋利",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/images/avatar.gif"
+        },
+        "description": "但行好事，莫问前程"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "越锋利",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/images/avatar.gif"
+        }
+    },
+    "keywords": "this is site keywords in theme",
+    "description": "越锋利的个人博客",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#苏堤及其它"><span class="post-toc-number">1.</span> <span class="post-toc-text">苏堤及其它</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#雷峰塔与白娘子"><span class="post-toc-number">2.</span> <span class="post-toc-text">雷峰塔与白娘子</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#飞来峰与灵隐寺"><span class="post-toc-number">3.</span> <span class="post-toc-text">飞来峰与灵隐寺</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                西湖景点漫谈
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/images/avatar.gif" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>越锋利</strong>
+        <span>2月 11, 2015</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=西湖景点漫谈&url=http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/index.html&pic=http://yuefeng.li/images/favicon.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=西湖景点漫谈&url=http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/index.html&via=越锋利" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/index.html&text=西湖景点漫谈" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>前几日与同学一起，再一次游历了杭州的许多景点：西湖南北，灵隐虎跑，吴山河坊，最远还跑去了拱宸桥。杭州的大部分景点，已然是被我们逛遍了。<br>然而到头来一回味，总有一种走马观花的感觉。青原惟信禅师有所谓山水的三重境界，我大概还只停留在第一重：看山是山，看水是水。<br>为了提高自己的<ruby>境<rp>（</rp><rt>bi</rt><rp>）</rp>界<rp>（</rp><rt>ge</rt><rp>）</rp></ruby>，我决定在网上各处逛逛，找找西湖景色背后的故事。寒假的日子本来也是闲出<ruby>鸟<rp>（</rp><rt>diao</rt><rp>）</rp></ruby>来，一不小心就花了两三天在这个上面。到了第四天的时候，我发觉自己内心肿胀，不得不码几个字倾泻一下，是以有此文。</p>
+<h1 id="苏堤及其它"><a href="#苏堤及其它" class="headerlink" title="苏堤及其它"></a>苏堤及其它</h1><p>这西湖的景色吧，自来就有『新西湖十景』和『旧西湖十景』之说。前者是 1985 年杭州日报社号召人民群众票选出来的，包括云栖竹径、满陇桂雨、虎跑梦泉、龙井问茶、九溪烟树、吴山天风、阮墩环碧、黄龙吐翠、玉皇飞云、宝石流霞。作为一个非典型杭州人（其实我是萧山大帝国国民），我表示其中有几个景点，我至今不知道具体是什么，更没有去过。此处按下不表。所以，我感觉一般说西湖十景的时候，指的还是后者，也就是『旧西湖十景』，其成型于南宋年代，包括苏堤春晓、曲院风荷、平湖秋月、断桥残雪、花港观鱼、南屏晚钟、双峰插云、雷峰夕照、三潭印月以及柳浪闻莺。</p>
+<p>先说说苏堤春晓。在某些说法中，此景为西湖十景之首。之所以这么说，大约是因为它跨度太大，内容太丰富。说起来的话，西湖十景里有 40% 就是在苏堤上（苏堤春晓、曲院风荷、平湖秋月、花港观鱼）。所谓『苏堤』，指的是苏东坡当年给西湖清淤的时候拿淤泥修的堤。尽管名字里带个文豪，这个景点其实没有什么故事，不过苏堤上的风景着实是不错的。夕阳西下的时候，在苏堤上东望外西湖时的所看到的景色，大约就是最西湖的西湖了。</p>
+<p>[图待补完……]</p>
+<p>花港观鱼，在苏堤的南段。虽然名字很美轮美奂，但是去看时，不过也是一方十米见方的小池塘，里面养了几尾红鲤鱼而已。塘前有个亭，亭里有个碑，上有所谓乾隆手书『花港觀魚』四字。其中『魚』字下为三点。这次去的时候，听不止一个人说，这字乾隆是故意写成三点的。其中的缘由，据说是因为在汉字里『三点为水，四点为火』，前者可以『江、河、湖、海、泊、流』为例，后者可以『照、煮、熬、煎、热、熏』等字为例。乾隆老爷当年写为三点，是因为不忍将『鱼』置于火上煎熬，于是换成三点水，希望鱼儿欢快的生活在水里……当时我就震惊了，心说在行书里四点写为三点不是很随意的么，用得着这么牵强附会附庸风雅嘛……回来一查，看《<a href="http://blog.people.com.cn/article/27/1353937837926.html" target="_blank" rel="noopener">康熙为何写三点水的“魚”</a>》所考据的，基本上可以确定，那些个导游都是在扯淡了。</p>
+<p>南屏晚钟。此景其实不是视觉景色，而是说晚上的时候，听净慈寺里的大钟敲个响声。此钟看起来也没什么特别的，号称重一万斤，敲一下十块钱软妹币。我感觉还是怪坑的。更坑的是净慈寺，从正门进去，要收十块钱门票，还美其名曰『香花券』。但是其实东边有个小门，通向停车场和厕所，无需门票就可以进入。好吧，我是在买了门票进去之后才发现这条旁门左道……另外，后来在灵隐寺我还看到有卖杭州寺庙联名年卡的，好像是四十块钱一年，不限次数。考虑到灵隐寺本身的香花券是三十块钱，这个价格订得还真是巧妙啊。</p>
+<h1 id="雷峰塔与白娘子"><a href="#雷峰塔与白娘子" class="headerlink" title="雷峰塔与白娘子"></a>雷峰塔与白娘子</h1><p>其实我一直记得，西湖景区的门票已经全部取消了，所以初看到雷峰塔门票要 40 软妹币的时候，完全吓了一跳。尽管如此，不得不说，雷峰塔还是值得一去的，因为站在雷峰塔的顶端，可以一览西湖风光，这样的景色，除此之外，也只有飞鸟和四旋翼才能看到了。</p>
+<p>雷峰塔位于西湖南面南屏山下雷峰上。按照张岱在《西湖梦寻》里的说法，雷峰旧名『中峰』，亦名『回峰』，只是因为宋代有个叫雷就的住在这里，于是叫成了『雷峰』。所以说，和建国以后的那个『雷锋』，是没有一毛钱关系的。<br>但是这个塔呢，最早并不叫雷峰塔，因为它建于五代时期，那时候雷峰还不叫雷峰。这塔最早叫做『黄妃塔』，民间也有称其为『黄皮塔』的。具体来说，根据雷峰塔官网上的《<a href="http://jing.leifengta.com/introduction.aspx?c_kind=4&c_kind2=15&c_kind3=18&c_kind4=24#maodian" target="_blank" rel="noopener">变迁考略</a>》，塔建于公元 970 年代，五代十国的时候。那时候，西湖这边叫做钱塘县，属于吴越国。而这个塔就是吴越国的最后一位国王钱弘俶（因避宋宣祖赵弘殷偏讳，也称钱俶）造的。网上有说法说此塔是钱弘俶为了庆祝黄妃（他的第三任老婆）得子而建，但是文献中并没有说这么明确。《<a href="http://ctext.org/wiki.pl?if=gb&chapter=238137&remap=gb" target="_blank" rel="noopener">咸淳临安志</a>》载雷峰塔碑记：</p>
+<blockquote>
+<p>　……諸宮監尊禮佛螺髻發，猶佛生存，不敢私秘宮禁中。恭率寶貝，創窣波於西湖之滸，以奉安之……宮監弘願之始，以千尺十三層爲率，爰以事力未充，姑從七極。梯旻初志，未滿爲慊。計磚灰土木油錢，瓦石與夫工藝像設金碧之嚴，通緡錢六百萬……於是合十指爪而讚歎之，塔曰黃妃雲。<br>　　吳越國王錢俶拜手謹書於經之尾</p>
+</blockquote>
+<p>可以看到钱弘俶并没有说是为了庆祝谁谁得子，建塔的目的是为了供奉佛螺髻发（佛祖的头发），只是把塔命名为黄妃塔而已。</p>
+<center>![旧雷峰塔塔身](http://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Leifeng_Pagoda_1910.jpg/200px-Leifeng_Pagoda_1910.jpg "旧雷峰塔塔身")</center>
+这塔身板挺硬朗。但是到了明朝，雷峰塔被倭寇放了一把火，于是木质结构全毁，只剩下一座砖石结构的塔身。『清后期，塔因年久不修，又因迷信者盛传塔砖能辟邪宜男，盗挖者日增，塔基开始削弱。清末明初期间为保护古塔景观，当局曾筑墙护塔，但挖砖者仍屡禁不绝。1924年9月25日，塔终因塔砖盗挖过多，加以塔址附近汪庄造屋打桩引起之震动而轰然倒坍，当时杭州市民闻讯争往观看，万人空巷』……引自官网上的《[变迁杂记](http://jing.leifengta.com/introduction.aspx?c_kind=4&c_kind2=15&c_kind3=18&c_kind4=25#maodian)》。
+现在的雷峰塔是 2001 年重建的。在重建之前，顺便挖掘了下雷峰塔下传说中的地宫（塔都已经倒了半个多世纪了，竟然没被盗墓贼抢先一步），挖出不少文物，其中就有鎏金纯银阿育王塔：
+<center>![鎏金纯银阿育王塔](http://www.zhejiangmuseum.com/UpFile/141203/114113153412.jpg "鎏金纯银阿育王塔")</center>
+我感觉这个塔看起来还是相当精致的。据说里面就有佛祖的头发，不过按照官方导游的说法，这座塔从未被打开过。要是打开来发现出来个白娘子就吓尿了。
+
+<p>所以说，史实什么的，其实没有什么意思。还是来看看白娘子的故事罢。<br>最初描写白娘子的文学作品，大约是明末清初冯梦龙的小说《警世通言》，其中第二十八卷即为《<a href="http://shuku.mofcom.gov.cn/book/htmfile/90/s61.htm" target="_blank" rel="noopener">白娘子永镇雷峰塔</a>》。关于这个故事，我随便翻了下，综合百度百科（<a href="http://baike.baidu.com/subview/16594/15891826.htm#7" target="_blank" rel="noopener">白娘子</a>/<a href="http://baike.baidu.com/view/5850258.htm#2" target="_blank" rel="noopener">白娘子永镇雷峰塔</a>），可以这么概括：</p>
+<blockquote>
+<p>杭州药商许宣在西湖坐渡船，偶遇一妇人携一丫鬟搭船，妇人自称姓白，先嫁官人姓张，业已病逝。不久天下雨，许宣借伞给白娘子。之后许宣多次上门索伞，白娘子一直不给。此后，许宣屡次使用白娘子赠送的华服财宝，还凭着这些钱自己开了个药店。但其实那都是官府店家失盗之物，许宣因此两次惹上官司，每次事发之后白娘子都消失不见，待尘埃落定之后才又找上门来。后经历诸多是非，许宣乃知白素贞、小青俱是妖精，并受白娘子所化大蟒蛇威胁，惊恐难安，便求净慈寺法海禅师救度。白娘子以全城人性命威胁：『若听我言语喜喜欢欢，万事皆休；若生外心，教你满城皆为血水，人人手攀洪浪，脚踏浑波，皆死于非命。』。最后，法海用法力制服了白娘子和丫鬟小青，逼她们显出原形，并把两妖压在雷峰塔下，救了许宣。许宣看破红尘情愿出家，礼拜禅师为师，就雷峰塔披剃为僧。修行数年，一夕坐化去了。众僧买龛烧化，造一座骨塔，千年不朽……</p>
+</blockquote>
+<p>在这个最初的版本里，白娘子并不像是个好人（虽然她也不曾害人），深爱着许宣倒是确实。法海像是个救世主，许宣则是一如既往的没用。整个故事还是相对简单的，并没有盗仙草救夫，以及水漫金山的情节，更不用说白蛇生子和祭塔了。从结局来看，感觉像是一个 bad ending，以两妖精被镇压，许宣出家最后死去而结束。<br>在这个故事里，雷峰塔是特地为了镇压两妖而建的。</p>
+<p>之后有许多戏曲都以白娘子的故事为蓝本加以改编，陆续有弹词作品《<a href="https://shuge.org/ebook/xiu-xiang-yi-yao-quan-zhuan/" target="_blank" rel="noopener">义妖传</a>》（1772），方城培的《<a href="http://greatcourse.cnu.edu.cn/zggdwx/wlkc/kcxx/09/rz/%E9%9B%B7%E5%B3%B0%E5%A1%94%E4%BC%A0%E5%A5%87.htm" target="_blank" rel="noopener">雷峰塔传奇</a>》(17xx)，玉花堂主人的《<a href="http://zh.wikisource.org/zh/%E9%9B%B7%E5%B3%B0%E5%A1%94%E5%A5%87%E5%82%B3" target="_blank" rel="noopener">雷峰塔奇传</a>》（1806）。前面两个都是戏剧本子，看起来太累了；《雷峰塔奇传》的话，我顺手翻了翻，其情节可以用第十二回白娘子被法海收了之前的自白来概括：</p>
+<blockquote>
+<p>妾身原是四川青城山清风洞白蛇是也。在洞修行年久，只因游玩，醉卧山下，梦中露出本体，被一乞丐所拿，携往市中要卖，却值官人看见，用钱取买，放生山中，妾感佩在心。因官人今世命该乏嗣，因此下山与官人缔结朱陈，为他传嗣，接续宗枝，以报他救命之恩。因见官人家贫，盗银相赠，致他受罪姑苏。妾同小青跟到姑苏，寻媒结亲，妾炼药制丹，赞助官人。后因庆赏端阳，被官人强灌黄酒，现出原形，惊坏官人，妾出万死一生，前去南极仙山，求得回生仙草，救了官人回魂，因怕官人识破根基，用法瞒过。妾早夜辛苦，助成家计，继因祖师圣诞，众医无良，勒派官人当头，陈设宝器。妾恐官人忧愁，同小青费尽机谋，偷盗王府宝器，解了官人忧愁。后因官人生辰，排列厅中，被王府家人所拿，引官治罪。幸蒙苏州府陈爷仁慈，从轻发落，再配镇江。妾与小青相商，收拾银两，寄搭姑夫府上，又到镇江寻觅官人。皆因受恩前世，被官人三休四弃并无怨悔。后因官人游玩金山寺，被佛爷留住寺中，妾难舍夫妻之情，同小青到寺相寻，水淹金山，误害镇江生灵，犯了大罪，妾原欲俟蛟儿满月之后，回洞苦修，以赎前愆，怎知大数难逃。儿子梦蛟，万望姑娘念亲亲之情，半子之谊，代妾抚养，俾得长成，官人宗枝有赖，万勿以非类见疑。</p>
+</blockquote>
+<p>之后儿子许梦蛟好好学习，天天向上，终于中得状元，前来祭塔，救出了母亲。然后法海度他们夫妻二人双双升仙，留下其实功劳算是最大的儿子，在地上巴巴地看，还要忍受无父无母的孤独生活。</p>
+<p>在这个版本里，白娘子的形象有了很大改观，首先，她不是二婚了（什么鬼？）；第二，她不再是因色起意而勾搭许仙，而是为了报恩，为许仙接续宗枝才来与他成婚；第三，虽然她还是做了很多坑爹的事儿，坑蒙拐骗什么的，但是出发点还是为了许仙。法海的形象变化不大，依然是正义的伙伴。从结果来看，整个故事算是一个 happy ending，夫妻俩最终团聚，并且双双成仙。他们的儿子也是和表妹喜结连理（娃娃亲），完成了一个妹控的终极理想。<del>德国骨科欢迎你。</del></p>
+<p>清末，江荫香托名『梦花馆主』作《白蛇全传》（1920s），这个版本的白娘子故事内容已经非常丰富，也是现代众多电视剧改编的基础。同样是在这个时期(1924)，雷峰塔正式倒塌了。鲁迅还写了一篇《<a href="http://baike.baidu.com/view/297305.htm" target="_blank" rel="noopener">论雷峰塔的倒掉</a>》借机批评了所谓封建礼教的卫道士，赞扬了白娘子的反抗精神。至此，白素贞已经完全由单纯迷惑人的妖怪变成了一个有情有义、永于抗争的女性形象。而法海呢，成为了一个阻挠爱情自由，一肚子坏水的恶人。</p>
+<p>这之后，自 1960 年代以来，各个版本的电视剧和戏剧的白娘子就层出不穷。这其中最著名的大约是 1992 年赵雅芝版的《新白娘子传奇》。其实吧，这个电视剧我并没有看过。看<a href="http://baike.baidu.com/view/21807.htm" target="_blank" rel="noopener">百度百科</a>上的剧情介绍，感觉整个故事还是相当复杂的。<del>所以我就懒得看了。</del></p>
+<p>那么现在问题来了，白娘子的故事，明明大部分都是发生在苏州和镇江，为什么要以杭州作为故事的开头和结尾呢？以及，这小妖精老和尚，又是怎么和雷峰塔扯上关系的呢？为了回答这个问题，我又回过头去仔细读了一遍成文的最早版本的白娘子传奇：《白娘子永镇雷峰塔》，依然没有找到答案。想来大约是因为，这是一个浪漫的爱情故事，而杭州自南宋以来，就一直<a href="http://zh.moegirl.org/%E6%88%98%E5%9C%BA%E5%8E%9F%E9%BB%91%E4%BB%AA" target="_blank" rel="noopener">荡漾</a>着一种浪漫浮夸，歌舞升平的气息吧。张岱在《西湖梦寻》里就写道，『余尝谓住西湖之人，无人不带歌舞，无山不带歌舞，无水不带歌舞，脂粉纨绮，即村妇山僧，亦所不免』……<br>不过到了现在，杭州的这种气质已经完全无法寻见了。取而代之的，是另一种 atmosphere——柴静之前还在某影片中吐槽说，杭州一年的雾霾天数比帝都魔都，甚至石家庄都多。</p>
+<h1 id="飞来峰与灵隐寺"><a href="#飞来峰与灵隐寺" class="headerlink" title="飞来峰与灵隐寺"></a>飞来峰与灵隐寺</h1><p>飞来峰位于西湖西侧，北高峰下，灵隐寺旁。号称山峰，其实不过是一小丘，高不会超过半百，三两分钟就能登顶。但其构造独特，与周围山石迥异，全为石灰岩。在水流作用下，形成了许多溶洞，『棱层剔透，嵌空玲珑』。进的洞去，往往是山重水复，别有洞天。有些石头，如太湖石一般磨得光滑，很有意味。山上的树也很奇特，『石上多异木，不假土壤，根生石外』，多藤蔓，常倒伏于路中间。</p>
+<p>地质学上也有个术语叫『飞来峰』，指『当逆冲断层和推覆构造发育地区遭受强烈侵蚀切割，外来岩块被大片剥蚀，只在大片被剥露出来的原地岩块上残留小片孤零零的外来岩体』。我感觉，这个和西湖的飞来峰应该不是一回事儿。</p>
+<p>相传晋代有个印度人叫惠理，云游到这里看见了飞来峰，叹曰：『此天竺灵鹭峰一小岭，不知何代飞来？佛在世日，多为仙灵所隐』。冯梦龙在《警世通言》里说得还要有趣，说是这阿三说了这话之后，大家都不信，于是他说，『我记得灵鹫山前峰岭，唤做灵鹫岭。这山洞里有个白猿，看我呼出为验。』果然呼出白猿来。至今山上仍有一『呼猿洞』。僧人觉得这是一个好地方，于是在此建寺。从此此石得名『飞来峰』，寺名『灵隐』。现在飞来峰前有惠理塑像，寺中有『灵鹫飞来』四字牌匾。</p>
+<p>五代以来，人们就开始在飞来峰上造佛像。关于这造像的缘由，小时候曾经听过一个传说，说是这山峰本是一直在各个地方飞来飞去的，人民群众表示对此十分苦恼。后来有高人指点说，若在上面刻 99 尊佛像，就能把山峰镇住，于是人们就开始造像了。这传说现在在网上已经找不到半点踪迹，网上只有个和济公有关的飞来峰传说。</p>
+<p>如今飞来峰上一共有石像三四百座，其中五代三座，宋代两百多座，元代汉、藏喇嘛教造像一百多座。五代的三座，分别为弥陀、观音、大势至，位于青林洞口，又小又破，反正我这次去是完全没有注意到。宋代的造像规模庞大，数量众多，最有代表性的就是南宋年代的大肚弥勒佛像，号称是我国现存最早的大肚弥勒。</p>
+<p>元代的佛像虽然有一百多，但是保存较为完好的只有一半左右了。试问明明元代是年代比较近的，怎么毁坏的反而更多呢？毫无疑问，毁坏的元代佛像里，有很多都是被人有意砸坏的。一方面，元朝忽必烈尊喇嘛教（藏传佛教）为国教，因此刻的都是喇嘛教佛像。而汉人自来就信的是自己的佛教，对此不太待见。另一方面，据说元代在飞来峰上的造像活动是<a href="http://baike.baidu.com/view/1294461.htm" target="_blank" rel="noopener">杨琏真迦</a>主持的，这人也是坏事做尽。《元史》载：『有杨琏真加者，世祖用为江南释教总统，发掘故宋赵氏请陵之在钱唐、绍兴者及大臣冢墓凡一百一所；戕杀平民四人；受人献美女宝物无』”。除了挖坟盗墓卖钱之外，他还把宋理综的颅骨割下来做酒杯用（<a href="http://zh.wikipedia.org/wiki/%E5%98%8E%E5%B7%B4%E6%8B%89%E7%A2%97" target="_blank" rel="noopener">骷髅碗</a>）。一个外族人竟然敢如此作践前朝皇帝的尸体，各位汉人自然是心里非常不爽。后来改朝换代，朱元璋做了皇帝，对此也十分看不下去，特地去把头颅要过来送还到绍兴宋陵，此事才算了结。</p>
+<p>明代的文人雅士和人民群众们，对于杨琏真加，一个个都是恨之入骨。袁弘道在《飞来峰小记》里称其为『杨秃』，说他造的石像对于飞来峰来说『如美人面上瘢痕，奇丑可厌』。张岱在《<a href="http://www.artsdome.com/books/xhmx/016.htm" target="_blank" rel="noopener">西湖梦寻 · 飞来峰</a>》里更是称其为『杨髡』（髡，音坤，剔发之刑），说他不仅『专发古冢』，而且『喜与僵尸淫媾』。前面袁弘道只是说说，张岱可是真的砸了一个他认为是杨坤的石像（《<a href="http://www.artsdome.com/books/xhmx/021.htm" target="_blank" rel="noopener">西湖梦寻 · 岣嵝山房</a>》）。另外，明代田汝成，清代陈仕贤都砸过（参见《<a href="http://big5.xinhuanet.com/gate/big5/www.zj.xinhuanet.com/website/2010-11/12/content_21382236.htm" target="_blank" rel="noopener">飛來峰石刻被砸與宋理宗頭骨飲器</a>》）。这还只是有记载的，没被记载的就更多了。不过，根据<a href="http://zh.wikipedia.org/wiki/%E6%A5%8A%E7%92%89%E7%9C%9F%E7%8F%88" target="_blank" rel="noopener">维基百科</a>的说法，这些人都砸错了，杨坤像至今还在……</p>
+<p>飞来峰旁灵隐寺，当之无愧是杭州第一寺。那真是，香火旺盛，相当有钱。佛像一个个都是超级高大，浑身镀金的。五百罗汉殿里五百尊罗汉铜像，平均身高一米七，平均体重一吨（用铜的密度来估算一下的话，这些铜像果然都是实心的）。如今铜市价三万五一吨，这五百尊的话，就……</p>
+<p>参考资料：</p>
+<ol>
+<li>维基百科</li>
+<li>百度百科</li>
+<li>《西湖梦寻》，张岱</li>
+<li>n 个版本的白娘子传说</li>
+<li>《<a href="http://book.oversea.cnki.net/CCGBWEB/Book_c.aspx?bid=OB130007012" target="_blank" rel="noopener">西湖游览志</a>》/《<a href="http://www.zjcul.com/pmetadata.php?process=metadataviewer&templateid=1&bundleid=15" target="_blank" rel="noopener">西湖游览志余</a>》，田汝成</li>
+</ol>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuefeng.li/2015/Haowan/lets-talk-about-west-lake/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2015/Web/fuck_GFW/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2015/Haowan/Matlab-notes/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/images/avatar.gif" alt="越锋利's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        但行好事，莫问前程
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="/about" target="_blank" title="About Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person</i>
+                        
+                        About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/12/">十二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/11/">十一月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/04/">四月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/02/">二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/01/">一月 2015<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/12/">十二月 2014<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/10/">十月 2014<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2009/07/">七月 2009<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">21</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/YuefengLi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/yuefengli" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;越锋利
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
