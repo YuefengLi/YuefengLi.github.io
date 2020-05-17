@@ -24,12 +24,15 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
 
     <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
 
 
 
-    <link rel="dns-prefetch" href="https://.disqus.com"/>
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
 
 
 
@@ -277,7 +280,7 @@
         "name": "越锋利",
         "image": {
             "@type": "ImageObject",
-            "url": "/images/avatar.gif"
+            "url": "/images/feng_150.png"
         },
         "description": "但行好事，莫问前程"
     },
@@ -401,7 +404,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/images/avatar.gif" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="/images/feng_150.png" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -440,7 +443,7 @@
             <a class="post_share-link" href="#">
                 <li class="mdl-menu__item">
                     <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;次浏览
                     </span>
                 </li>
             </a>
@@ -515,34 +518,30 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 DISQUS -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'http://yuefeng.li/2015/Random%20Thoughts/2015-01-25/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yuefeng.li/2015/Random%20Thoughts/2015-01-25/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-<script type="text/ls-javascript" id="disqus-thread-script">
-    queue.offer(function() {
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-                s.src = '//.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        });
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' === 'true';
+    var verify = 'false' === 'true';
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "0ugwUsSyYmT2nbvx4o64pMu0-MdYXbMMI",
+        appKey: "NKtRJ744uBMMxqah5LclS3kO",
+        placeholder: "人生如逆旅，我亦是行人…",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn',
+        guest_info: guest_info
+    });
 </script>
 
-</div>
-<style>
-    #disqus-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
 
                 
             </div>
@@ -603,7 +602,7 @@
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/images/avatar.gif" alt="越锋利's avatar">
+        <img src="/images/feng_150.png" alt="越锋利's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -660,7 +659,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/">什么值得买<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%A5%BD%E7%8E%A9/">好玩<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/">什么值得买<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%A5%BD%E7%8E%A9/">好玩<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AD%A6%E6%9C%AF/">学术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%BF%90%E5%8A%A8/">运动<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -912,12 +911,11 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
     <!-- Busuanzi -->
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
-   <!-- 使用 DISQUS js 代码 -->
-<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+   
 
 
 
