@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta name="description" content="中证500日线与历史价格百分位观察工具">
+  <title>中证500 · 信号观测</title>
+  <link rel="stylesheet" href="assets/app.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="信号观测首页"><span class="brand-mark">S</span><span>信号观测<span class="brand-sub">MARKET MONITOR</span></span></a>
+      <div class="data-status"><span class="status-dot"></span><span id="data-status">正在读取行情…</span></div>
+    </header>
+
+    <section class="heading-row">
+      <div><div class="eyebrow">INDEX · 000905.SH</div><h1>中证 500 <span class="index-tag">CSI 500</span></h1><p class="intro">观察指数点位在自身历史中的位置</p></div>
+      <div class="latest-card"><span>最新收盘</span><strong id="latest-close">—</strong><small id="latest-change">行情数据加载中</small></div>
+    </section>
+
+    <section class="control-card" aria-label="图表控制">
+      <div class="control-group">
+        <span class="control-label">图表范围</span>
+        <div class="segmented" id="range-controls" role="group" aria-label="图表显示范围">
+          <button data-range="1">1年</button><button data-range="3" class="active">3年</button><button data-range="5">5年</button><button data-range="all">全部</button>
+        </div>
+      </div>
+      <div class="control-group signal-controls">
+        <span class="control-label">百分位窗口</span>
+        <div class="segmented" id="window-controls" role="group" aria-label="百分位计算窗口">
+          <button data-window="1">1年</button><button data-window="3" class="active">3年</button><button data-window="5">5年</button>
+        </div>
+      </div>
+      <div class="control-group date-control">
+        <label class="control-label" for="date-picker">观察日期</label>
+        <input id="date-picker" type="date" aria-label="选择观察日期">
+      </div>
+      <button id="latest-button" class="latest-button" type="button">回到最新 <span aria-hidden="true">↗</span></button>
+    </section>
+
+    <section class="chart-card">
+      <div class="chart-heading">
+        <div><h2>指数日线</h2><p>悬停查看 · 点击固定日期 · 拖动平移 · 滚轮缩放</p></div>
+        <div class="ohlc-readout" id="ohlc-readout">将鼠标移到图表上查看当日 OHLC</div>
+      </div>
+      <div class="chart-wrap price-wrap"><canvas id="price-chart" aria-label="中证500日线蜡烛图"></canvas></div>
+      <div class="chart-separator"><span>历史价格百分位</span><span class="chart-unit">0–100%</span></div>
+      <div class="chart-wrap percentile-wrap"><canvas id="percentile-chart" aria-label="历史价格百分位副图"></canvas></div>
+      <div class="chart-footer"><span>时间轴与游标联动</span><span id="chart-date-range">—</span></div>
+    </section>
+
+    <section class="insight-grid">
+      <article class="signal-card">
+        <div class="card-kicker">价格历史位置 <span id="signal-window-label">近 3 年</span></div>
+        <div class="signal-main"><div class="gauge" id="gauge"><div class="gauge-inner"><strong id="signal-value">—</strong><span>百分位</span></div></div><div class="signal-copy"><strong id="signal-date">—</strong><span id="signal-message">选择一个交易日查看信号</span><span id="sample-count" class="muted">—</span></div></div>
+        <div class="signal-scale"><span>0 · 窗口低位</span><span>100 · 窗口高位</span></div>
+      </article>
+      <article class="quick-card">
+        <div class="card-kicker">快速定位 <span>按所选日期</span></div>
+        <div class="quick-actions"><button id="quick-latest" type="button"><span>最新交易日</span><strong>最新 <i>↗</i></strong></button><button id="quick-prev" type="button"><span>前一交易日</span><strong>前一日 <i>↗</i></strong></button><button id="quick-week" type="button"><span>上一自然周</span><strong>上周末 <i>↗</i></strong></button></div>
+        <p class="quick-note">上周末指所选日期所在自然周之前一周的最后一个交易日。</p>
+      </article>
+    </section>
+
+    <footer class="footnote"><div class="method"><strong>指标说明</strong><p>百分位将所选日收盘价与之前相应窗口内的日收盘价比较，包含当日；低于当前值的样本计 1，并列计 0.5。它描述历史价格位置，不是收益预测或买卖建议。窗口数据不足时不计算。</p></div><div class="provenance"><span>数据来源 <a href="https://tushare.pro/document/2?doc_id=95" target="_blank" rel="noreferrer">Tushare Pro · 指数日线 ↗</a></span><span id="data-asof">数据截止日 —</span><span id="build-time">构建时间 —</span></div></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
